@@ -138,7 +138,7 @@ body{
 
 
 /* .blogs */
-.blogs, .matches{
+#blogs, #matches{
     display: grid;
     width: 75%;
     grid-template-columns: repeat(3, 1fr);
@@ -193,7 +193,10 @@ hr{
 }
 
 /* tableveiw button */
-#tbltbtn{
+#tableview{
+    display: flex;
+}
+#tbltbtn, #tblbtn1{
     text-align: center;
     justify-content: center;
     font-size: 35px;
@@ -211,7 +214,10 @@ hr{
 .flag{
     display: flex;
 }
-
+/* social media */
+#socialMedia i{ 
+    font-size: 30px;
+}
 
 
 /* responsive for mobile */
@@ -243,7 +249,7 @@ hr{
         background-color: white;
         width: 70%;
     }
-    .blogs, .matches{
+    #blogs, #matches{
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
     }
@@ -289,7 +295,7 @@ hr{
         margin: 0px;
         width: 100%; 
     }
-    .blogs, .matches{
+    #blogs, #matches{
         grid-template-columns: repeat(2, 1fr);
         overflow-y: hidden;
         width: 100%; 
@@ -304,11 +310,14 @@ hr{
         align-items: center;
         flex-direction: column;
     }
-    #tabletview #tbltbtn{
+    #tabletview #tbltbtn, #tabletview #tbltbtn1s{
         background-color: red;
         display: flex;
+    } 
+    #tabletview #tbltbtn:focus, .blogs{
+        height: 100%;
     }
-    #tbltbtn:checked{
-        background-color: blue;
+    #tabletview #tbltbtn1:focus, .blogs{
+        height: 1000px;
     }
 }

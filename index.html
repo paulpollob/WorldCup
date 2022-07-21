@@ -47,7 +47,7 @@
                 <a class = "button" href="">All Group</a>
                 <a class = "current-button" href="">Blog</a>
             </div >
-            <div class = "blogs">
+            <div id = "blogs">
                 <div class="blog">
                     <img src="assets/Blog Image.png" alt="">
                     <div class ="title">
@@ -196,9 +196,14 @@
         </secion>
         
     </section>
-    <div id="tabletview">
-        <button id="tbltbtn">View all</button>
+    <div id="tabletview" >
+        <button id="tbltbtn" onclick="myFunction()">View all</button>
     </div>
+    <script>
+        function myFunction() {
+          document.getElementById("blogs").style.height = "2000px";
+        }
+        </script>
 </body>
 
 
@@ -211,5 +216,10 @@
     <a href="">Privacy Setting</a>
     <a href="">Goal App</a>
     <a href="">Goal Live</a></div>
+    <div id="socialMedia">
+        <a href="https://www.facebook.com/prokash.paul.pollob"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/prokashpollob/"><i class="fa-brands fa-instagram-square"></i></a>
+        <a href="https://twitter.com/pollob_prokash"><i class="fa-brands fa-twitter-square"></i></a>
+    </div>
 </footer>
 </html>
