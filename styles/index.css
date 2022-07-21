@@ -43,6 +43,7 @@ body{
     padding: 5px 10px;
     justify-content: space-between; 
     text-decoration: none;
+    transition: transform 0.8s;
 }
 
 
@@ -68,6 +69,18 @@ body{
     padding: 20px;
     width: 19%; 
 }
+.banners{  
+  transition: transform 1s;
+}
+
+.first-section:hover .banners{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); 
+}
+
+/* .banner1:hover{
+    opacity: 1;
+} */
 .second-section .content .button,.second-section .content .current-button{
     display: flex;
     flex-direction: column;
